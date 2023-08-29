@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D611AE562A9DF8D000C612C8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D611AE552A9DF8D000C612C8 /* DataManager.swift */; };
 		D61647962A95F50B008E14C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61647952A95F50B008E14C2 /* AppDelegate.swift */; };
 		D61647982A95F50B008E14C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61647972A95F50B008E14C2 /* SceneDelegate.swift */; };
 		D616479D2A95F50B008E14C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616479B2A95F50B008E14C2 /* Main.storyboard */; };
@@ -14,9 +15,11 @@
 		D61647A22A95F50E008E14C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61647A02A95F50E008E14C2 /* LaunchScreen.storyboard */; };
 		D61647AF2A95F711008E14C2 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61647AE2A95F711008E14C2 /* ContactListViewController.swift */; };
 		D61647B12A95F725008E14C2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61647B02A95F725008E14C2 /* Person.swift */; };
+		D61C84C82A98B762004366D1 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C84C72A98B762004366D1 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D611AE552A9DF8D000C612C8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D61647922A95F50B008E14C2 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61647952A95F50B008E14C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61647972A95F50B008E14C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		D61647A32A95F50E008E14C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D61647AE2A95F711008E14C2 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		D61647B02A95F725008E14C2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D61C84C72A98B762004366D1 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D611AE542A9DF8B500C612C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D611AE552A9DF8D000C612C8 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D61647892A95F50B008E14C2 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 			children = (
 				D61647AD2A95F565008E14C2 /* View controllers */,
 				D61647AC2A95F55B008E14C2 /* Models */,
+				D611AE542A9DF8B500C612C8 /* Services */,
 				D61647AA2A95F539008E14C2 /* Storyboards */,
 				D61647A92A95F52F008E14C2 /* Resources */,
 				D61647AB2A95F54E008E14C2 /* App */,
@@ -106,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D61647AE2A95F711008E14C2 /* ContactListViewController.swift */,
+				D61C84C72A98B762004366D1 /* DetailsViewController.swift */,
 			);
 			path = "View controllers";
 			sourceTree = "<group>";
@@ -182,9 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61647962A95F50B008E14C2 /* AppDelegate.swift in Sources */,
+				D611AE562A9DF8D000C612C8 /* DataManager.swift in Sources */,
 				D61647982A95F50B008E14C2 /* SceneDelegate.swift in Sources */,
 				D61647B12A95F725008E14C2 /* Person.swift in Sources */,
 				D61647AF2A95F711008E14C2 /* ContactListViewController.swift in Sources */,
+				D61C84C82A98B762004366D1 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

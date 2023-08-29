@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="814" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="gLv-eI-Hhi">
             <objects>
-                <viewController id="PP0-nv-q3i" sceneMemberID="viewController">
+                <viewController id="PP0-nv-q3i" customClass="DetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZRq-go-6a7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
