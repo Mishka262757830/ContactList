@@ -14,12 +14,30 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)"
     }
-    
-    static func getPerson() -> [Person] {
-        [
-            Person(name: "Petr", surname: "Ivanov", number: "1234", email: "petr@y.ru"),
-            Person(name: "Ivan", surname: "Petrov", number: "57098", email: "ivan@gkfj.ru"),
-            Person(name: "Mikhail", surname: "Ryzhov", number: "894536739587", email: "gufi@dbf.com")
-        ]
+}
+
+extension Person {
+    static func getContactList() -> [Person] {
+        
+        var persons: [Person] = []
+        
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let numbers = DataManager.shared.numbers.shuffled()
+        let emails = DataManager.shared.emails.shuffled()
+        
+        let iterationCount = min(names.count, surnames.count, numbers.count, emails.count)
+        
+        for index in 1..<iterationCount {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                number: numbers[index],
+                email: emails[index]
+            )
+            
+            persons.append(person)
+        }
+        return persons
     }
 }
